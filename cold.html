@@ -1,0 +1,172 @@
+<html>
+    <head>
+    <title>enzo </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cold.css">
+</head>  
+    <body>
+        <section> <diV style="background-color: black; margin-top: 0%; position: sticky;"></diV>
+          <div class="topnav">
+            <img src="Pink Minimal Typography Logo .png" style="height: 150px;  margin-right: 250px; ">
+                 <a href="medicine.html" target="_self">BUY</a>
+              <a class="active" href="index.html" style="margin-left: 50px;">HOME &nbsp;&nbsp;</a>
+                  <a href="chat.html" target="_self">CONTACT DOCTOR &nbsp;&nbsp;</a>
+                  <a href=" https://simmarsandhu.github.io/kwitter/" target="_self"> &nbsp;&nbsp;COMMUNITY</a>
+                  <a href="symptom.html" target="_self"> &nbsp;&nbsp;SYMPTOM TEST</a>
+                  <a href="login.html" target="_self"> &nbsp;&nbsp;PATIENTS INFO</a>
+                    </div>
+          </div>
+        </section>
+        <section >
+    <div class="div1" style="background-image:url(women-with-fever.jpg); background-repeat: no-repeat; background-size: cover; "style="height: 300px; width:1500px;">
+        <center>
+        <div id="div2" style="background-color: white; height:500px ;width: 800px ;padding: 20px;" >
+            <div>
+       
+              <form >
+                <p>Having high temperature ?:</p>
+                <input type="radio" id="yes1" name="yesorno" value="yes" onclick="yes()">
+                <label for="yes1">YES</label><br>
+                <input type="radio" id="no1" name="yesorno" value="no">
+                <label for="no1">NO</label><br>
+            
+              
+                <br>  
+              </form>
+              <form>
+                
+                <p>Are you having running nosead feeling sneezy:</p>
+                <input type="radio" id="yes2" name="yesorno" value="yes" onclick="yes()">
+                <label for="yes2">YES</label><br>
+                <input type="radio" id="no2" name="yesorno" value="no">
+                <label for="no2">NO</label><br>  
+                
+    
+                
+                
+              </form>
+              <form >
+                <p>Having headache?chills, cough, congestion?:</p>
+                <input type="radio" id="yes3" name="yesorno" value="yes" onclick="yes()">
+                <label for="yes3">YES</label><br>
+                <input type="radio" id="no3" name="yesorno" value="no">
+                <label for="no3">NO</label><br>
+            
+              
+                <br>  
+              
+                
+               
+              </form>
+              
+              <form>
+                <p>Feeling weak and tired or having pain in joints?feel like you lost your apetite?:</p>
+                <input type="radio" id="yes4" name="yesorno" value="yes" onclick="yes()">
+                <label for="yes4">YES</label><br>
+                <input type="radio" id="no4" name="yesorno" value="no">
+                <label for="no4">NO</label><br>
+            
+              
+                <br>  
+              
+                
+               
+              </form>
+              <form >
+                <p>facing problem in breathing or chest pain?</p>
+                <input type="radio" id="yes5" name="fav_language" value="yes" onclick="yes()">
+                <label for="yes5">YES</label><br>
+                <input type="radio" id="no5" name="fav_language" value="no">
+                <label for="no5">NO</label><br>
+            
+              
+                
+                
+    
+                
+                
+              </form>
+              <button  onclick="results()" class="button-24">   SUBMIT</button>
+</div>
+    <script src="cold.js"></script>
+</section>
+</center>
+</div>
+<br><br><br><br><br><br><br>
+ <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">We the students of Mothers global school provide a revolutionized contactless health care infrastructure prototype via the means of our ENZO<br>
+            This software will be of use to the hospital staff who will be just one click away from accessing the patients information from anywhere around the worl .
+            Enzo website where one will be able to learn about the diseases and our software can also be used in self diagnosis of common illnesses</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">html</a></li>
+            <li><a href="">UI Design</a></li>
+            <li><a href="">css</a></li>
+            <li><a href="">Java</a></li>
+            <li><a href="">webpage</a></li>
+            <li><a href="">health care </a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="chat.html">Contact Us</a></li>
+            <li><a href="kwitter_page.html">world</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+  </section>
+    </body>
+</html>

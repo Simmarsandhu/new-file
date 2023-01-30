@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>patients indo||</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Yeon+Sung&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="db.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <diV style="background-color: black; margin-top: 0%; position: sticky;"></diV>
+  <div class="topnav">
+    <img src="Pink Minimal Typography Logo .png" style="height: 150px;  margin-right: 250px; ">
+         <a href="medicine.html" target="_self">BUY</a>
+      <a class="active" href="index.html" style="margin-left: 50px;">HOME &nbsp;&nbsp;</a>
+          <a href="chat.html" target="_self">CONTACT DOCTOR &nbsp;&nbsp;</a>
+          <a href=" https://simmarsandhu.github.io/kwitter/" target="_self"> &nbsp;&nbsp;COMMUNITY</a>
+          <a href="symptom.html" target="_self"> &nbsp;&nbsp;SYMPTOM TEST</a>
+          <a href="db.html" target="_self"> &nbsp;&nbsp;PATIENTS INFO</a>
+            </div>
+  </div>
+    <section class="sec">
+        <br><br><br>
+    <h1>ENZO </h1>
+    <br>
+    <input type="text" id="number" class="Input"placeholder="enter patients id " style="width: 600px; height: 40px; border-radius: 20px;"></input><br><br>
+    <button onclick="getdata()" class="button-81" style="font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;">GET DETAILS</button>
+</section>
+
+    <div id="root" style="text-align: center;"><h3 style="font-family: 'Bebas Neue', cursive;">patients info</h3></div>
+    <script>
+        // Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyBbWCbHbsoe9R7iT41jGm4RxfbFETJYUmE",
+    authDomain: "enzo-project-b7537.firebaseapp.com",
+    databaseURL: "https://enzo-project-b7537-default-rtdb.firebaseio.com",
+    projectId: "enzo-project-b7537",
+    storageBucket: "enzo-project-b7537.appspot.com",
+    messagingSenderId: "111183687601",
+    appId: "1:111183687601:web:64af74dbdece2759d79790"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  
+  function getdata(){
+    const val = document.querySelector('input').value;
+  console.log(val);
+    if(val == "3336"){
+  var firebaseRef = firebase.database().ref("3336");
+  firebaseRef.on("value", function(snapshot){
+    snapshot.forEach(function(element){
+        document.querySelector("#root").innerHTML +=`
+        <div id='div1'>${element.val()}<hr></div>
+        `
+    });
+  });
+}
+else if(val == "5465"){
+  var firebaseRef = firebase.database().ref("5465");
+  firebaseRef.on("value", function(snapshot){
+    snapshot.forEach(function(element){
+        document.querySelector("#root").innerHTML +=`
+        <div id='div1'>${element.val()}<hr></div>
+        `
+    });
+  });
+}
+else{
+    console.log("user not found");
+    window.alert("user not found"
+     )
+}
+}
+
+    </script>
+    <br>
+    <br>
+     <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">We the students of Mothers global school provide a revolutionized contactless health care infrastructure prototype via the means of our ENZO<br>
+              This software will be of use to the hospital staff who will be just one click away from accessing the patients information from anywhere around the worl .
+              Enzo website where one will be able to learn about the diseases and our software can also be used in self diagnosis of common illnesses</p>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">html</a></li>
+              <li><a href="">UI Design</a></li>
+              <li><a href="">css</a></li>
+              <li><a href="">Java</a></li>
+              <li><a href="">webpage</a></li>
+              <li><a href="">health care </a></li>
+            </ul>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="chat.html">Contact Us</a></li>
+              <li><a href="kwitter_page.html">world</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        
+  
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+    </section>
+</body>

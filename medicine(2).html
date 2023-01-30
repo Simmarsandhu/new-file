@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>enzo </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="medicine.css">
+</head>
+<body>
+    <diV style="background-color: black; margin-top: 0%; position: sticky;"></diV>
+    <div class="topnav">
+      <img src="Pink Minimal Typography Logo .png" style="height: 150px;  margin-right: 250px; ">
+           <a href="medicine(2).html" target="_self">BUY</a>
+        <a class="active" href="index.html" style="margin-left: 50px;">HOME &nbsp;&nbsp;</a>
+            <a href="chat.html" target="_self">CONTACT DOCTOR &nbsp;&nbsp;</a>
+            <a href=" https://simmarsandhu.github.io/kwitter/" target="_self"> &nbsp;&nbsp;COMMUNITY</a>
+            <a href="symptom.html" target="_self"> &nbsp;&nbsp;SYMPTOM TEST</a>
+            <a href="db.html" target="_self"> &nbsp;&nbsp;PATIENTS INFO</a>
+              </div>
+    </div>
+  
+<div Id="div1">
+    <div style="float: right;">
+        <h1 style="color: #4699A9;font-family: 'Rubik Glitch', cursive; font-size: 50px; ">NEED MEDICINES INSTANTLY</h1>
+        <h3 style="font-family: 'Mukta', sans-serif; color:#DAA593;">OUR ENZO IS HERE TO HELP</h3>
+        <a href="#medic" target="_self">BUY MEDICINES</a> 
+
+    </div>
+    
+        
+        
+    </div>
+
+</div>
+<div style="background-color:#FB2576;  position: -webkit-sticky;
+position: sticky;
+top:0;
+padding: 5px;">
+    <a><img src="shopping-bag.png" style="height: 50px;"></a>
+    
+    <div class="popup" onclick="myFunction()" style="color: white;">cart
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>
+
+</div>
+<center>
+<section id="medic">
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-lg-3 div_p">
+                <img src="https://i.pinimg.com/564x/6d/d5/6b/6dd56b56d220f4c49c25dd2598e37a15.jpg" style="height:100px;width:100px">
+                <p>PARACETAMOL</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54" id="button_par" onclick="add1()">ADD</button>
+            </div>
+            <div class="col-lg-3 div_p">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalWL29wCbC693p1t_9dsq_6K-KcvEGvPq1e_amtdDiCBn9R9PWSKkAUyNko9g4tpOCvQ&usqp=CAU" style="height:100px;width:100px">
+                <p>BENADRY</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54" id="button_ben" onclick="add2()">ADD</button>
+            </div>
+            <div class="col-lg-3 div_p">
+                <img src="https://img.medscapestatic.com/pi/features/drugdirectory/octupdate/00206318.jpg?output-quality=50" style="height:100px;width:100px">
+                <p>STOMACH RELIEF</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54" id="button_stom" onclick="add3()">ADD</button>
+            </div>
+            <div class="col-lg-3 div_p">
+                <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/ckrjzacxu5okokbtdgku.jpg" style="height:100px;width:100px">
+                <p>PUDHIN HARA</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54" id="button_pud" onclick="add4()">ADD</button>
+            </div>
+            
+            <div class="col-lg-3 div_p">
+                <img src="https://i0.wp.com/homeomart.net/wp-content/uploads/2017/09/hevert-gastro-germany-intestinal-relief-tablets.jpg?fit=542%2C470&ssl=1" style="height:100px;width:100px">
+                <p>GASTO INTESTINAL RELIEF</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54" id="button_gaso" onclick="add5()">ADD</button>
+            </div>
+            
+            <div class="col-lg-3 div_p">
+                <img src="https://m.media-amazon.com/images/I/71Am99zPDsL._SL1500_.jpg" style="height:100px;width:100px">
+                <p>SOFI</p>
+                <br>
+                <br>
+                <p>rs.</p>
+                <button class="button-54"id="butt_sofi" onclick="add6()">ADD</button>
+            </div>
+
+ 
+ 
+        </div>
+    </center>
+    </div>
+    
+</div>
+<br><br><br>
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">We the students of Mothers global school provide a revolutionized contactless health care infrastructure prototype via the means of our ENZO<br>
+            This software will be of use to the hospital staff who will be just one click away from accessing the patients information from anywhere around the worl .
+            Enzo website where one will be able to learn about the diseases and our software can also be used in self diagnosis of common illnesses</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">html</a></li>
+            <li><a href="">UI Design</a></li>
+            <li><a href="">css</a></li>
+            <li><a href="">Java</a></li>
+            <li><a href="">webpage</a></li>
+            <li><a href="">health care </a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="chat.html">Contact Us</a></li>
+            <li><a href="kwitter_page.html">world</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+  </section>
+
+
+
+
+</div>
+</center>
+</div>
+</div>
+</section>
+             
+    </div>
+
+<script src="medicine (2).js"></script>
+</section>
+                         
+                </div>
+        
+                   </body>
