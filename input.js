@@ -11,11 +11,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 var Speechrecognition = window.webkitSpeechRecognition;
 var recognition = new Speechrecognition();
  
-var Speechrecognition = window.webkitSpeechRecognition;
-var recognition = new Speechrecognition();
 
 function start_btn(){
     document.getElementById("text_box").innerHTML = "";
